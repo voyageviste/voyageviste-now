@@ -1,0 +1,362 @@
+/* ==========================================================================
+   VOYA FLIGHTS - ENTERPRISE FLIGHT BOOKING PLATFORM
+   LUXURY COLOR PALETTE, DESIGN TOKENS & FUNNEL ARCHITECTURE
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Curated High-Converting Aviation Palette (Unified Blue Theme) */
+  --primary-navy-950: #040e20;
+  --primary-navy-900: #071938;
+  --primary-navy-800: #0c2552;
+  --primary-navy-700: #123470;
+  
+  --sky-blue-600: #0f62fe;
+  --sky-blue-700: #0043ce;
+  --sky-blue-500: #2563eb;
+  --sky-blue-100: #edf5ff;
+  --sky-blue-50:  #f4f8ff;
+  
+  --cyan-accent: #00c2cb;
+  --cyan-soft: rgba(0, 194, 203, 0.12);
+  
+  --amber-600: #1e40af;
+  --amber-500: #0284c7;
+  --amber-400: #38bdf8;
+  --amber-soft: #f0f9ff;
+  
+  --emerald-600: #1d4ed8;
+  --emerald-500: #2563eb;
+  --emerald-soft: #eff6ff;
+  
+  --coral-500: #ef4444;
+  --coral-soft: #fee2e2;
+  
+  --bg-page: #f6f9fc;
+  --bg-surface: #ffffff;
+  --bg-muted: #f1f5f9;
+  
+  --text-title: #071938;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --text-subtle: #94a3b8;
+  
+  --border-subtle: #e2e8f0;
+  --border-medium: #cbd5e1;
+  
+  --shadow-xs: 0 1px 2px rgba(7, 25, 56, 0.04);
+  --shadow-sm: 0 4px 14px rgba(7, 25, 56, 0.06);
+  --shadow-md: 0 10px 25px rgba(7, 25, 56, 0.08);
+  --shadow-lg: 0 18px 45px rgba(7, 25, 56, 0.12);
+  --shadow-xl: 0 24px 60px rgba(7, 25, 56, 0.15);
+  --shadow-glow: 0 8px 25px rgba(15, 98, 254, 0.28);
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 26px;
+  --radius-pill: 9999px;
+  
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  --font-script: 'Caveat', cursive;
+  
+  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Strict Box Sizing & Overflow Prevention */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  max-width: 100%;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: all var(--transition-smooth);
+}
+
+input, select, textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+}
+
+img, svg {
+  display: block;
+}
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Funnel Pages Container */
+.funnel-page {
+  display: none;
+  animation: fadeInFunnel 0.28s ease-out;
+}
+
+.funnel-page.active {
+  display: block;
+}
+
+@keyframes fadeInFunnel {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.section-tagline {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--sky-blue-600);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  color: var(--text-title);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.section-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--sky-blue-600);
+}
+
+.section-more-link:hover {
+  color: var(--sky-blue-700);
+  transform: translateX(3px);
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--sky-blue-600);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 13px 26px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: var(--shadow-glow);
+  transition: all var(--transition-smooth);
+}
+
+.btn-primary:hover {
+  background: var(--sky-blue-700);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(15, 98, 254, 0.35);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #1d4ed8, #0284c7);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 13px 26px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(29, 78, 216, 0.35);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(2, 132, 199, 0.45);
+}
+
+.btn-ghost-white {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-ghost-white:hover {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+/* ==========================================================================
+   OFFICIAL AIRLINE LOGOS CAROUSEL (CLEAN, ENLARGED VECTOR EMBLEMS)
+   ========================================================================== */
+
+.airline-partners-section {
+  padding: 32px 0 22px;
+  background: #ffffff;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.airline-marquee-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.airline-marquee-header span {
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-title);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+.marquee-track {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  animation: scrollMarquee 32s linear infinite;
+  padding: 6px 0;
+  max-width: none !important;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.airline-badge-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border: 1.5px solid var(--border-subtle);
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(7, 25, 56, 0.04);
+  transition: all var(--transition-fast);
+}
+
+.airline-badge-card:hover {
+  border-color: var(--sky-blue-600);
+  box-shadow: 0 6px 18px rgba(15, 98, 254, 0.16);
+  transform: translateY(-2px);
+}
+
+.airline-vector-logo {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.airline-vector-logo svg,
+.airline-vector-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.airline-name {
+  font-size: 0.96rem;
+  font-weight: 800;
+  color: var(--text-title);
+  letter-spacing: -0.01em;
+}
