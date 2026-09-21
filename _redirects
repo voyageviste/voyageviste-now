@@ -1,0 +1,8 @@
+/trains-in-usa    /trains-in-usa.html    200
+/amtrak           /trains-in-usa.html    200
+/auto-train       /auto-train.html       200
+/autotrain        /auto-train.html       200
+/trains-in-canada /trains-in-canada.html 200
+/viarail          /trains-in-canada.html 200
+/via-rail         /trains-in-canada.html 200
+/*                /index.html            200
