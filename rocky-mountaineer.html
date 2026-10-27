@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Rocky Mountaineer Train Tickets & Reservations</title>
+  <meta name="description" content="Explore Rocky Mountaineer train routes, ticket options, scenic journeys, and travel packages. Find useful information to plan your next mountain adventure.">
+  <meta name="keywords" content="Rocky Mountaineer, Rocky Mountaineer Train, Rocky Mountaineer Train Tickets, Rocky Mountains Reservations">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rocky Mountaineer Train Tickets & Reservations">
+  <meta property="og:description" content="Explore Rocky Mountaineer train routes, ticket options, scenic journeys, and travel packages. Call our Reservation Desk at 1-800-875-9145.">
+  <meta property="og:image" content="assets/images/hero-train.jpg">
+
+  <!-- Professional, Clean Sans-Serif Typography (No Fancy Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==============================================
+       TOP ANNOUNCEMENT / DESK STATUS BAR
+       ============================================== -->
+  <div class="top-desk-bar">
+    <div class="container top-desk-inner">
+      <div class="desk-status">
+        <span class="live-dot"></span>
+        <span><strong>Reservation Desk &amp; Help Desk Online Now</strong> &bull; Toll-Free Support &bull; Instant Assistance</span>
+      </div>
+      <div class="desk-quick-call">
+        <a href="tel:18008759145" class="top-call-link">
+          <svg class="icon-phone" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+          <span>Toll-Free: <strong>1-800-875-9145</strong></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       HEADER: ONLY LOGO AND CTAs (NO LONG MENUS)
+       ============================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Clean Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="Voyage Viste Home">
+        <img src="assets/images/voyageviste_logo.png" alt="Voyage Viste" class="site-logo-img">
+      </a>
+
+      <!-- Header CTAs Only: Call Now, Reservation Desk, Help Desk -->
+      <div class="header-cta-group">
+        <a href="tel:18008759145" class="header-desk-btn help-desk-btn" title="Call Help Desk">
+          <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <div class="btn-text-wrap">
+            <span class="btn-sub">Customer Support</span>
+            <span class="btn-main">Help Desk</span>
+          </div>
+        </a>
+
+        <a href="tel:18008759145" class="header-desk-btn res-desk-btn" title="Contact Reservation Desk">
+          <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <div class="btn-text-wrap">
+            <span class="btn-sub">Bookings &amp; Tickets</span>
+            <span class="btn-main">Reservation Desk</span>
+          </div>
+        </a>
+
+        <a href="tel:18008759145" class="header-call-btn" title="Call Now Toll-Free">
+          <div class="call-pulse-ring">
+            <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+          </div>
+          <div class="btn-text-wrap">
+            <span class="btn-sub">Toll-Free Connect</span>
+            <span class="btn-main">1-800-875-9145</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==============================================
+         1. HERO SECTION
+         ============================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-wrapper">
+        <img src="assets/images/hero-train.jpg" alt="Rocky Mountaineer scenic train traversing majestic mountain landscapes" class="hero-bg-img" loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-tag">
+          <span class="tag-badge">Scenic Rail Travel</span>
+          <span class="tag-text">Premier Mountain Rail Journeys</span>
+        </div>
+
+        <h1 class="hero-title">Experience the Beauty of Rocky Mountaineer</h1>
+
+        <p class="hero-lead">
+          Discover stunning mountain views, scenic train routes, and unforgettable journeys through the Canadian Rockies and the American Southwest.
+        </p>
+
+        <p class="hero-subtext">
+          Explore train routes, compare travel options, and plan your next adventure.
+        </p>
+
+        <!-- Supporting Points -->
+        <div class="hero-supporting-points">
+          <div class="point-item">
+            <span class="check-icon">✓</span>
+            <span>Scenic Train Journeys</span>
+          </div>
+          <div class="point-item">
+            <span class="check-icon">✓</span>
+            <span>Explore Train Routes</span>
+          </div>
+          <div class="point-item">
+            <span class="check-icon">✓</span>
+            <span>Ticket &amp; Travel Options</span>
+          </div>
+          <div class="point-item">
+            <span class="check-icon">✓</span>
+            <span>Easy Trip Planning</span>
+          </div>
+        </div>
+
+        <!-- Hero CTAs: Direct Call & Reservation -->
+        <div class="hero-actions-row">
+          <a href="tel:18008759145" class="btn btn-hero-call">
+            <div class="btn-icon-circle">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+            </div>
+            <div class="btn-text-content">
+              <span class="btn-label">CALL NOW FOR RESERVATIONS</span>
+              <span class="btn-phone">1-800-875-9145</span>
+            </div>
+          </a>
+
+          <a href="#reservations" class="btn btn-hero-gold">
+            <span>Explore Train Options</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- Help Desk Quick Note -->
+        <div class="hero-desk-info">
+          <span>Need help choosing a route or package? Speak with our <strong>Reservation Desk</strong> directly at <a href="tel:18008759145">1-800-875-9145</a></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         2. INTRODUCTION SECTION
+         ============================================== -->
+    <section class="section intro-section" id="introduction">
+      <div class="container">
+        <div class="intro-card">
+          <div class="intro-content">
+            <span class="section-tag">About The Journey</span>
+            <h2 class="section-title">Discover a Better Way to Explore the Mountains</h2>
+            <p class="intro-paragraph">
+              Rocky Mountaineer offers a unique way to experience some of North America's most beautiful landscapes.
+            </p>
+            <p class="intro-paragraph">
+              Enjoy scenic rail journeys, impressive mountain views, and comfortable onboard experiences. Whether you're planning a relaxing holiday or a special trip, explore the available routes and find a journey that suits your plans.
+            </p>
+            <div class="intro-cta-box">
+              <a href="#routes" class="btn btn-primary">
+                <span>Explore Journeys</span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="tel:18008759145" class="btn btn-outline-call">
+                <svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+                <span>Call Reservation Desk: 1-800-875-9145</span>
+              </a>
+            </div>
+          </div>
+          <div class="intro-visual">
+            <img src="assets/images/goldleaf-dome.jpg" alt="Comfortable onboard glass-dome passenger coach with scenic mountain views" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         3. TRAIN ROUTES SECTION
+         ============================================== -->
+    <section class="section routes-section" id="routes">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Scenic Rail Lines</span>
+          <h2 class="section-title">Explore Rocky Mountaineer Train Routes</h2>
+          <p class="section-lead">
+            Discover scenic train journeys through mountains, valleys, forests, and remarkable natural landscapes.
+          </p>
+        </div>
+
+        <div class="routes-grid">
+          <!-- Route 1 -->
+          <div class="route-card">
+            <div class="route-image-wrap">
+              <img src="assets/images/hero-train.jpg" alt="First Passage to the West train along mountain river" loading="lazy">
+            </div>
+            <div class="route-info">
+              <h3 class="route-title">First Passage to the West</h3>
+              <p class="route-desc">
+                Travel between Vancouver and the Canadian Rockies, with connections to Banff and Lake Louise through selected itineraries.
+              </p>
+              <div class="route-actions">
+                <a href="tel:18008759145" class="btn btn-primary btn-block">
+                  <span>Explore Route</span>
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Route 2 -->
+          <div class="route-card">
+            <div class="route-image-wrap">
+              <img src="assets/images/journey-clouds.jpg" alt="Journey Through the Clouds mountain scenery" loading="lazy">
+            </div>
+            <div class="route-info">
+              <h3 class="route-title">Journey Through the Clouds</h3>
+              <p class="route-desc">
+                Discover spectacular mountain scenery on the journey between Vancouver and Jasper.
+              </p>
+              <div class="route-actions">
+                <a href="tel:18008759145" class="btn btn-primary btn-block">
+                  <span>View Journey</span>
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Route 3 -->
+          <div class="route-card">
+            <div class="route-image-wrap">
+              <img src="assets/images/rainforest.jpg" alt="Rainforest to Gold Rush pine forest scenery" loading="lazy">
+            </div>
+            <div class="route-info">
+              <h3 class="route-title">Rainforest to Gold Rush</h3>
+              <p class="route-desc">
+                Experience the changing landscapes of British Columbia, from coastal rainforest scenery to the historic Cariboo region.
+              </p>
+              <div class="route-actions">
+                <a href="tel:18008759145" class="btn btn-primary btn-block">
+                  <span>Explore Route</span>
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Route 4 -->
+          <div class="route-card">
+            <div class="route-image-wrap">
+              <img src="assets/images/red-rocks.jpg" alt="Rockies to the Red Rocks desert canyon scenery" loading="lazy">
+            </div>
+            <div class="route-info">
+              <h3 class="route-title">Rockies to the Red Rocks</h3>
+              <p class="route-desc">
+                Enjoy a scenic rail journey through the American Southwest between Denver, Colorado, and Moab, Utah.
+              </p>
+              <div class="route-actions">
+                <a href="tel:18008759145" class="btn btn-primary btn-block">
+                  <span>Discover Route</span>
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="routes-footnote text-center">
+          <em>Routes, destinations, and departure options vary by season and itinerary.</em>
+        </p>
+
+        <!-- Direct Route Callout -->
+        <div class="desk-callout-banner">
+          <div class="dcb-content">
+            <h4>Have Questions About Any Route or Schedule?</h4>
+            <p>Our dedicated Reservation Desk can check departure dates, package inclusions, and available seats for you.</p>
+          </div>
+          <a href="tel:18008759145" class="btn btn-call-cta">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+            <span>Call Reservation Desk: 1-800-875-9145</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         4. TRAIN TICKETS SECTION
+         ============================================== -->
+    <section class="section tickets-section" id="tickets">
+      <div class="container">
+        <div class="tickets-layout">
+          <div class="tickets-text">
+            <span class="section-tag">Booking &amp; Fares</span>
+            <h2 class="section-title">Find Rocky Mountaineer Train Tickets</h2>
+            <p class="section-lead">
+              Planning your journey starts with choosing the right route, travel dates, and onboard experience.
+            </p>
+            <p class="section-lead">
+              Explore available Rocky Mountaineer train tickets and compare travel options before making your plans.
+            </p>
+
+            <ul class="clean-check-list">
+              <li>
+                <span class="check-bullet">✓</span>
+                <span>Choose your preferred route.</span>
+              </li>
+              <li>
+                <span class="check-bullet">✓</span>
+                <span>Check available travel dates.</span>
+              </li>
+              <li>
+                <span class="check-bullet">✓</span>
+                <span>Compare onboard service levels.</span>
+              </li>
+              <li>
+                <span class="check-bullet">✓</span>
+                <span>Explore train and hotel packages.</span>
+              </li>
+              <li>
+                <span class="check-bullet">✓</span>
+                <span>Review prices and booking details.</span>
+              </li>
+            </ul>
+
+            <p class="tickets-closing">
+              Find the information you need to make a confident travel decision.
+            </p>
+
+            <div class="tickets-cta-wrap">
+              <a href="tel:18008759145" class="btn btn-primary">
+                <span>Explore Ticket Options</span>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="tel:18008759145" class="btn btn-outline-call">
+                <svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+                <span>Call Help Desk: 1-800-875-9145</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="tickets-visual-col">
+            <div class="ticket-desk-card">
+              <div class="tdc-header">
+                <span class="tdc-badge">Ticket Desk</span>
+                <h4>Speak to a Ticketing Specialist</h4>
+                <p>Check real-time ticket availability, seat selections, and seasonal promotions over the phone.</p>
+              </div>
+              <div class="tdc-body">
+                <div class="tdc-phone-box">
+                  <span class="tdc-label">TOLL-FREE RESERVATION LINE</span>
+                  <a href="tel:18008759145" class="tdc-number">1-800-875-9145</a>
+                  <span class="tdc-note">Daily: 7:00 AM – 9:00 PM EST</span>
+                </div>
+                <div class="tdc-points">
+                  <div>✓ Instant fare calculation</div>
+                  <div>✓ Flexible date transfers</div>
+                  <div>✓ No waiting on hold</div>
+                </div>
+                <a href="tel:18008759145" class="btn btn-call-cta btn-block">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+                  <span>Call Now for Ticket Rates</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         5. WHY CHOOSE ROCKY MOUNTAINEER?
+         ============================================== -->
+    <section class="section why-section" id="why-choose">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">The Rail Experience</span>
+          <h2 class="section-title">Make Your Journey Memorable</h2>
+          <p class="section-lead">
+            Experience the beauty of scenic rail travel while enjoying the comfort and service of a premium train journey.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Feature 1 -->
+          <div class="why-card">
+            <div class="why-icon">🏔️</div>
+            <h3 class="why-title">Beautiful Scenery</h3>
+            <p class="why-desc">Enjoy breathtaking views of mountains, rivers, forests, and natural landscapes.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="why-card">
+            <div class="why-icon">☀️</div>
+            <h3 class="why-title">Scenic Daylight Travel</h3>
+            <p class="why-desc">See more of the landscape during daylight hours along your selected route.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="why-card">
+            <div class="why-icon">🛋️</div>
+            <h3 class="why-title">Comfortable Travel</h3>
+            <p class="why-desc">Explore onboard service options designed to make your journey enjoyable.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="why-card">
+            <div class="why-icon">🍽️</div>
+            <h3 class="why-title">Onboard Dining</h3>
+            <p class="why-desc">Enjoy food and hospitality according to your selected service level.</p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="why-card">
+            <div class="why-icon">🌲</div>
+            <h3 class="why-title">Remarkable Destinations</h3>
+            <p class="why-desc">Discover beautiful destinations across Western Canada and the American Southwest.</p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="why-card">
+            <div class="why-icon">🏨</div>
+            <h3 class="why-title">Travel Packages</h3>
+            <p class="why-desc">Explore selected packages that combine train journeys with hotel stays and other travel experiences.</p>
+          </div>
+        </div>
+
+        <div class="why-cta text-center">
+          <a href="tel:18008759145" class="btn btn-primary">
+            <span>Explore Travel Experiences</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         6. RESERVATIONS SECTION
+         ============================================== -->
+    <section class="section reservations-section" id="reservations">
+      <div class="container">
+        <div class="reservations-card">
+          <div class="reservations-header text-center">
+            <span class="section-tag">Booking Support</span>
+            <h2 class="section-title">Plan Your Rocky Mountaineer Reservations</h2>
+            <p class="section-lead">
+              Planning a train journey can be easier when you have the right information.
+            </p>
+            <p class="section-lead">
+              Explore routes, check travel dates, compare ticket options, and review available packages before confirming your reservation.
+            </p>
+          </div>
+
+          <div class="reservations-grid">
+            <div class="options-box">
+              <h3 class="options-title">Explore Your Travel Options</h3>
+              <ul class="clean-check-list">
+                <li><span class="check-bullet">✓</span> <span>Train routes and destinations</span></li>
+                <li><span class="check-bullet">✓</span> <span>Ticket prices and availability</span></li>
+                <li><span class="check-bullet">✓</span> <span>Travel dates and schedules</span></li>
+                <li><span class="check-bullet">✓</span> <span>Onboard service options</span></li>
+                <li><span class="check-bullet">✓</span> <span>Hotel and travel packages</span></li>
+                <li><span class="check-bullet">✓</span> <span>Existing reservation information</span></li>
+              </ul>
+              <p class="options-closing">
+                Choose your preferred journey and review the available options for your travel plans.
+              </p>
+            </div>
+
+            <!-- Direct Reservation Desk Action Card -->
+            <div class="res-action-card">
+              <div class="rac-badge">Official Reservation Desk</div>
+              <h4>Speak Directly With Our Desk</h4>
+              <p>Skip complications. An experienced rail travel specialist will help you navigate packages, verify train seats, and answer questions.</p>
+              
+              <div class="rac-call-box">
+                <span class="rac-call-tag">TOLL-FREE CALL LINE</span>
+                <a href="tel:18008759145" class="rac-number">1-800-875-9145</a>
+                <span class="rac-status">🟢 Agents Available Now &bull; No Wait</span>
+              </div>
+
+              <a href="tel:18008759145" class="btn btn-call-cta btn-block">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+                <span>Explore Reservation Options</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         7. HOW IT WORKS
+         ============================================== -->
+    <section class="section how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Step-by-Step Guide</span>
+          <h2 class="section-title">Plan Your Journey in Three Simple Steps</h2>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-badge">1</div>
+            <h3 class="step-title">Choose Your Route</h3>
+            <p class="step-desc">
+              Explore the available train routes and select the destinations you want to visit.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-badge">2</div>
+            <h3 class="step-title">Compare Your Options</h3>
+            <p class="step-desc">
+              Review travel dates, ticket prices, onboard services, and available packages.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-badge">3</div>
+            <h3 class="step-title">Plan Your Trip</h3>
+            <p class="step-desc">
+              Check your itinerary and booking details before confirming your travel arrangements.
+            </p>
+          </div>
+        </div>
+
+        <div class="steps-cta text-center">
+          <a href="tel:18008759145" class="btn btn-primary">
+            <span>Start Planning</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         8. TRAVEL PLANNING SECTION
+         ============================================== -->
+    <section class="section planning-section" id="travel-planning">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Essential Preparation</span>
+          <h2 class="section-title">Get Ready for Your Train Journey</h2>
+          <p class="section-lead">
+            A little planning can help you enjoy a smoother and more comfortable travel experience.
+          </p>
+        </div>
+
+        <div class="planning-grid">
+          <!-- Plan 1 -->
+          <div class="planning-card">
+            <div class="plan-icon">📅</div>
+            <h3 class="plan-title">Choose Your Travel Dates</h3>
+            <p class="plan-desc">
+              Check the available departure dates and select the option that fits your schedule.
+            </p>
+          </div>
+
+          <!-- Plan 2 -->
+          <div class="planning-card">
+            <div class="plan-icon">⭐</div>
+            <h3 class="plan-title">Compare Service Levels</h3>
+            <p class="plan-desc">
+              Explore the available onboard experiences and choose the one that suits your preferences.
+            </p>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="planning-card">
+            <div class="plan-icon">🧳</div>
+            <h3 class="plan-title">Review Travel Packages</h3>
+            <p class="plan-desc">
+              Check whether hotel stays and additional travel arrangements are included in your selected package.
+            </p>
+          </div>
+
+          <!-- Plan 4 -->
+          <div class="planning-card">
+            <div class="plan-icon">📋</div>
+            <h3 class="plan-title">Check Your Booking Details</h3>
+            <p class="plan-desc">
+              Review your itinerary, travel requirements, and booking conditions before departure.
+            </p>
+          </div>
+        </div>
+
+        <div class="planning-cta text-center">
+          <a href="tel:18008759145" class="btn btn-primary">
+            <span>Explore Travel Options</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         9. FAQ SECTION
+         ============================================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Clear Answers</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- Q1 -->
+          <div class="faq-card active">
+            <button class="faq-question-btn" aria-expanded="true">
+              <span>What is Rocky Mountaineer?</span>
+              <span class="faq-icon">&minus;</span>
+            </button>
+            <div class="faq-answer-body">
+              <p>Rocky Mountaineer is a scenic train travel experience known for its daylight journeys through beautiful landscapes in Western Canada and the American Southwest.</p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-card">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Where does the Rocky Mountaineer train travel?</span>
+              <span class="faq-icon">&#43;</span>
+            </button>
+            <div class="faq-answer-body">
+              <p>Its routes include journeys between Vancouver and destinations in the Canadian Rockies, as well as the Rockies to the Red Rocks route between Denver and Moab.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-card">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>How can I find Rocky Mountaineer train tickets?</span>
+              <span class="faq-icon">&#43;</span>
+            </button>
+            <div class="faq-answer-body">
+              <p>Explore available routes, select your preferred travel dates, and compare ticket options through the official booking website or by calling the Reservation Desk at <a href="tel:18008759145">1-800-875-9145</a>.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-card">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>How can I check Rocky Mountaineer train prices?</span>
+              <span class="faq-icon">&#43;</span>
+            </button>
+            <div class="faq-answer-body">
+              <p>Prices depend on the route, travel dates, onboard service level, and selected package. Check the official website or contact our Help Desk for current prices.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-card">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Can I book hotels with my train journey?</span>
+              <span class="faq-icon">&#43;</span>
+            </button>
+            <div class="faq-answer-body">
+              <p>Selected travel packages include hotel accommodations and other travel arrangements. Check the details of your preferred package for inclusions.</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-card">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Can I change an existing reservation?</span>
+              <span class="faq-icon">&#43;</span>
+            </button>
+            <div class="faq-answer-body">
+              <p>Changes depend on the terms of your booking. Contact Rocky Mountaineer's official reservation team for help with an existing booking at <a href="tel:18008759145">1-800-875-9145</a>.</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="faq-card">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>When can I travel on Rocky Mountaineer?</span>
+              <span class="faq-icon">&#43;</span>
+            </button>
+            <div class="faq-answer-body">
+              <p>Travel seasons and departure dates vary by route. Check the official website or call our specialists for current schedules and availability.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-cta text-center">
+          <a href="tel:18008759145" class="btn btn-primary">
+            <span>Explore Train Options</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         10. FINAL CTA SECTION
+         ============================================== -->
+    <section class="section final-cta-section" id="final-cta">
+      <div class="container">
+        <div class="final-cta-card text-center">
+          <span class="fcta-badge">Start Your Adventure</span>
+          <h2 class="fcta-title">Your Next Scenic Journey Starts Here</h2>
+          <p class="fcta-desc">
+            Discover beautiful landscapes, explore exciting train routes, and find travel options for your next adventure.
+          </p>
+          <p class="fcta-subtext">
+            Start planning your Rocky Mountaineer journey today.
+          </p>
+
+          <div class="fcta-actions-row">
+            <a href="tel:18008759145" class="btn btn-call-cta btn-lg">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+              <span>Call Reservation Desk: 1-800-875-9145</span>
+            </a>
+
+            <a href="tel:18008759145" class="btn btn-primary btn-lg">
+              <span>Plan Your Journey</span>
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <div class="fcta-guarantee">
+            <span>Toll-Free Assistance</span> &bull; <span>Expert Route Advice</span> &bull; <span>Instant Rate Checks</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       11. FOOTER SECTION
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top-grid">
+        <div class="footer-col brand-col">
+          <a href="#" class="footer-brand-logo" aria-label="Voyage Viste Home">
+            <img src="assets/images/voyageviste_logo.png" alt="Voyage Viste" class="footer-logo-img">
+          </a>
+          <p class="footer-desc">
+            <strong>Explore Rocky Mountaineer Travel Options</strong><br>
+            Find information about scenic train routes, tickets, travel packages, and reservations.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Footer Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#routes">Train Routes</a></li>
+            <li><a href="#tickets">Train Tickets</a></li>
+            <li><a href="#introduction">Travel Options</a></li>
+            <li><a href="#reservations">Reservation Information</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="tel:18008759145">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col desk-col">
+          <h4 class="footer-title">Help &amp; Reservation Desks</h4>
+          <div class="footer-desk-card">
+            <span class="fdc-label">RESERVATION &amp; TICKET DESK</span>
+            <a href="tel:18008759145" class="fdc-phone">1-800-875-9145</a>
+            <small>Toll-Free &bull; 7 Days a Week: 7:00 AM – 9:00 PM EST</small>
+          </div>
+          <div class="footer-desk-card secondary-desk">
+            <span class="fdc-label">CUSTOMER SUPPORT &amp; HELP DESK</span>
+            <a href="tel:18008759145" class="fdc-phone">1-800-875-9145</a>
+            <small>Assistance for Existing Bookings &amp; Itineraries</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rocky Mountaineer. All rights reserved. Scenic rail journeys and travel information.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Travel</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       MOBILE STICKY ACTION DOCK (CALL NOW & RESERVATION DESK)
+       ============================================== -->
+  <aside class="mobile-sticky-dock" aria-label="Quick Actions">
+    <a href="tel:18008759145" class="dock-btn dock-call" id="mobileDockCall">
+      <svg class="dock-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17.93 17.93 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.23 2.09z"/></svg>
+      <div>
+        <strong>CALL NOW</strong>
+        <small>1-800-875-9145</small>
+      </div>
+    </a>
+    <a href="tel:18008759145" class="dock-btn dock-reserve" id="mobileDockReserve">
+      <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+      <div>
+        <strong>RESERVATION DESK</strong>
+        <small>Book Over Phone</small>
+      </div>
+    </a>
+  </aside>
+
+  <!-- JavaScript: Simple, Clean Accordion & Smooth Click-to-Call Feedback -->
+  <script src="app.js"></script>
+</body>
+</html>
