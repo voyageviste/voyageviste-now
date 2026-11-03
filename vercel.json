@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/trains-in-usa", "destination": "/trains-in-usa.html" },
+    { "source": "/amtrak", "destination": "/trains-in-usa.html" },
+    { "source": "/auto-train", "destination": "/auto-train.html" },
+    { "source": "/autotrain", "destination": "/auto-train.html" },
+    { "source": "/trains-in-canada", "destination": "/trains-in-canada.html" },
+    { "source": "/viarail", "destination": "/trains-in-canada.html" },
+    { "source": "/via-rail", "destination": "/trains-in-canada.html" },
+    { "source": "/((?!api/|css/|js/|assets/|.*\\..*).*)", "destination": "/index.html" }
+  ]
+}

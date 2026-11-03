@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyage Viste</title>
+  <script>
+    // GitHub Pages 404 redirect trick
+    // Save the current path and redirect to index.html
+    // index.html will read this and navigate to the correct page
+    var path = window.location.pathname;
+    var search = window.location.search;
+    var hash = window.location.hash;
+
+    // Store the intended URL in sessionStorage
+    sessionStorage.setItem('redirect_path', path + search + hash);
+
+    // Redirect to root index.html
+    window.location.replace('/');
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=/">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
+
